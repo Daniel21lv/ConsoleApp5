@@ -1,10 +1,13 @@
-﻿namespace I2A_OOP2
+﻿using I2A_OOP2.Tridy;
+
+namespace I2A_OOP2
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Pocitac pc = new Pocitac("i9", "GeForce", 1); //konstruktor new Pocitac("i9", "GeForce", 1)
+            pc.Zapnout();
         }
     }
 }
