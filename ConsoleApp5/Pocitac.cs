@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace I2A_OOP2.Tridy
 {
 
+    private bool _jeZapnuty = false;
     public class Pocitac
     {
         public Pocitac(string procesor, string grafika, int ram)
@@ -22,7 +23,13 @@ namespace I2A_OOP2.Tridy
 
         public void Zapnout()
         {
-            Console.WriteLine("Zapínám počítač...");
+            if (!_jeZapnuty)
+            {
+                Console.WriteLine("Zapínám počítač...");
+                _jeZapnuty = true;
+            }
+            else
+           
         }
     }
 }
